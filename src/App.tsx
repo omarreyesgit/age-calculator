@@ -74,7 +74,7 @@ function App () {
         <FormCalcAge onSubmit={handleSubmit} />
       </section>
       <section>
-        <RenderResults results={results} />
+        <RenderResults results={results} futureDate={futureDate} />
       </section>
     </main>
   )
