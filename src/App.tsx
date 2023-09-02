@@ -12,6 +12,8 @@ import { differenceInSeconds } from 'date-fns'
 import { RenderResults } from './components/RenderResults'
 import './App.css'
 import { Results } from './components/types'
+import { Footer } from './components/Footer'
+import { Header } from './components/Header'
 
 function App () {
   const [results, setResults] = useState<Results>({
@@ -68,15 +70,21 @@ function App () {
 
 
   return (
-    <main>
-      <h1>Calculadora de edad</h1>
-      <section>
-        <FormCalcAge onSubmit={handleSubmit} />
-      </section>
-      <section>
-        <RenderResults results={results} futureDate={futureDate} />
-      </section>
-    </main>
+    <div className='container-app'>
+      <Header />
+      <main>
+
+        <section>
+          <FormCalcAge onSubmit={handleSubmit} />
+        </section>
+        <section>
+          <RenderResults results={results} futureDate={futureDate} />
+
+        </section>
+      </main>
+
+      <Footer />
+    </div>
   )
 }
 
