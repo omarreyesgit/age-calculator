@@ -14,6 +14,7 @@ import './App.css'
 import { Results } from './components/types'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
+import ConfigWheel from './components/Icons/ConfigWheel'
 
 function App () {
   const [results, setResults] = useState<Results>({
@@ -74,13 +75,14 @@ function App () {
       <Header />
       <main>
 
-        <section>
+        <section className='section-container-form'>
           <FormCalcAge onSubmit={handleSubmit} />
         </section>
         <section>
           <RenderResults results={results} futureDate={futureDate} />
 
         </section>
+
       </main>
 
       <Footer />
