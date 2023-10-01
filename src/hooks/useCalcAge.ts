@@ -56,7 +56,7 @@ export const useCalcAge = () => {
     const weeksAlive = differenceInWeeks(today, birthDate)
     const hoursAlive = differenceInHours(today, birthDate)
     const minutesAlive = differenceInMinutes(today, birthDate)
-    console.log('daysAlive', daysAlive);
+
 
     if (daysAlive < 0) {
       setFutureDate(true)
