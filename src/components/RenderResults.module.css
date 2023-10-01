@@ -1,0 +1,12 @@
+.listResults {
+  list-style: none;
+}
+
+.listResults li:before {
+  content: '\2022';
+  color: var(--greenColor);
+  font-weight: bold;
+  margin-left: -1em;
+  display: inline-block;
+  width: 1em;
+}

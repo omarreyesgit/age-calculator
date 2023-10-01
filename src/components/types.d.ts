@@ -5,6 +5,16 @@ export interface Results {
   weeksAlive: number,
   hoursAlive: number,
   minutesAlive: number,
-  secondsAlive: number,
 
+
+}
+
+export const enum WEEK_DAYS {
+  SUNDAY = 'Domingo',
+  MONDAY = 'Lunes',
+  TUESDAY = 'Martes',
+  WEDNESDAY = 'Miércoles',
+  THURSDAY = 'Jueves',
+  FRIDAY = 'Viernes',
+  SATURDAY = 'Sábado'
 }

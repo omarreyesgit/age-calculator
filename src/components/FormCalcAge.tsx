@@ -7,9 +7,15 @@ interface FormCalcAgeProps {
 export const FormCalcAge = ({ onSubmit }: FormCalcAgeProps) => {
 
   return (
-    <form onSubmit={onSubmit}>
-      <input required type="date" name='date' />
-      <button>Calcular</button>
+    <form onSubmit={onSubmit} className={styles.form} >
+      <div className={styles.inputBox}>
+
+        <label htmlFor="date">
+          Introduzca una fecha
+        </label>
+        <input required type="date" name='date' id='date' className={styles.inputDate} />
+      </div>
+      <button className={styles.btnSubmit}>Calcular</button>
     </form>
   )
 }
