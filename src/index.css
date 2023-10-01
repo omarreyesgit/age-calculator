@@ -14,7 +14,8 @@
   -webkit-text-size-adjust: 100%;
   --max-width-document: 1200px;
   --padding-body: 0 2rem;
-  scroll-behavior: smooth
+  --greenColor: #2baf57;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -67,4 +68,9 @@ main {
   }
 
 
+}
+
+a {
+  text-decoration: none;
+  color: var(--greenColor);
 }

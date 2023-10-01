@@ -11,11 +11,11 @@ export const FormCalcAge = ({ onSubmit }: FormCalcAgeProps) => {
       <div className={styles.inputBox}>
 
         <label htmlFor="date">
-          Fecha de nacimiento
+          Introduzca una fecha
         </label>
         <input required type="date" name='date' id='date' className={styles.inputDate} />
       </div>
-      <button>Calcular</button>
+      <button className={styles.btnSubmit}>Calcular</button>
     </form>
   )
 }

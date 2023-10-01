@@ -1,32 +1,7 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  opacity: 0.9;
-}
-
-
-.header svg {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.header svg:hover {
-  transform:
-    /*  scale(1.1) */
-    rotate(90deg);
-  transition: ease-in 0.1s;
-  -webkit-transition: ease-in 0.1s;
-  -moz-transition: ease-in 0.1s;
-  -ms-transition: ease-in 0.1s;
-  -o-transition: ease-in 0.1s;
-
-}
-
-.header svg:not(hover) {
-  transform: rotate(180deg);
-  transition: ease-in 0.1s;
 
 }
